@@ -91,7 +91,7 @@ function createApp(database) {
         convertDateToPlainDate(date) &&
         convertDateToPlainDate(date).year === convertDateToPlainDate(holiday).year &&
         convertDateToPlainDate(date).month === convertDateToPlainDate(holiday).month &&
-        convertDateToPlainDate(date).day === holiday.getDate()
+        convertDateToPlainDate(date).day === convertDateToPlainDate(holiday).day
       ) {
         return true;
       }
